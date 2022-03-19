@@ -17,59 +17,79 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
-<body class="container" style="background-color: white;">
+<body class="container bg-light">
 
   <nav class="navbar sticky-top navbar-expand-lg bg-primary text-white rounded">
-    <a class="nav-item nav-link" style="margin-left: 2%; color: white; font-size: x-large ;" href="index.html">Home</a>
-    <a class="nav-item nav-link" style="margin-left: 2%; color: white; font-size: x-large ;" href="#research">Research</a>
-    <a class="nav-item nav-link" style="margin-left: 2%; color: white; font-size: x-large ;" href="#teaching">Teaching</a>
-    <!-- <a class="nav-item nav-link" style="margin-left: 2%; color: white; font-size: x-large ;" href="#services.html">Services</a>                   -->
+    <a class="nav-item nav-link text-light" style="margin-left: 2%; font-size: x-large ;" href="index.html">Home</a>
+    <a class="nav-item nav-link text-light" style="margin-left: 2%; font-size: x-large ;" href="#research">Research</a>
+    <a class="nav-item nav-link text-light" style="margin-left: 2%; font-size: x-large ;" href="#teaching">Teaching</a>
+    <!-- <a class="nav-item nav-link" style="margin-left: 2%; color: white; font-size: x-large ;" href="#services.html">Services</a> -->
   </nav>
 
   <div id="index" class="row row-cols-1 row-cols-md-2"> 
     <div class="col-md-9" style="transform: scale(0.85);">
-      <center><h1 style="width: 100%; margin-bottom: 2%">MOAHAMAD RAZKENARI</h1></center>
+      <h1 class = "text-center" style="width: 100%; margin-bottom: 2%">MOAHAMAD RAZKENARI</h1>
       <p style= "text-align: justify; margin-bottom: 2%">
         I am an Assistant Professor at SUNY College of Environmental Science and Forestry. My research focuses on applying Artificial Intelligence to improve construction process and creating innovative solutions to reduce high level of carbon emissions in the built environment.
       ​</p>
-      <img src="images/about1.jpg" class="card-img-top"  alt="...">
+      <!-- <img src="images/about1.jpg" class="card-img-top"  alt="..."> -->
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="transform: scale(0.9);">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/about1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/teaching.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/about1.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+       <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </button>
+      </div>
     </div>
-    <div class="col-md-3" style="height:40em; transform: scale(0.85); margin-top: 10%; overflow: auto;">
-      <a class="twitter-timeline" href="https://twitter.com/mrazkenari/timelines/1292835922069815297?ref_src=twsrc%5Etfw">Tweets - Curated tweets by mrazkenari</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <div class="col-md-3 bg-white" style="height:40em; transform: scale(0.85); margin-top: 10%; overflow: auto;">
+        <a class="twitter-timeline" href="https://twitter.com/mrazkenari/timelines/1292835922069815297?ref_src=twsrc%5Etfw">Tweets - Curated tweets by mrazkenari</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
   </div>
 
-  <div id="research" style="margin:3%; color: black;">
-    <h5><br><br><br>Research Projects ...​</h5>
+  <div id="research" style="margin:3%; margin-top: -5%; color: black;">
+    <br><br><br>
+    <h3 class="text-dark">Research Projects ...​</h3>
     <div class="card"  style="margin: 3%; color: #4c4c4c; ">
-      <div class="card-header"> Ongoing Research Projects</div>
-      <br>
-      <ul>
-        <li><a href="Project_070.html">Construction Safety Automation using Visual Sensing</a></li>               
-        <li><a href="Project_060.html"> Developing interactive educational content in a stereoscopic 3D environment</a></li>               
-        <li><a href="Project_050.html"> Real-time monitoring of human-building interactions in a 3D Virtual Reality environment</a></li>               
+      <div class="card-header fw-bold"> Ongoing Research Projects</div>
+      <ul style="margin-top:1%;">
+        <li><a href="" data-toggle="modal" data-target=".project_070">Construction Safety Automation using Visual Sensing</a></li>               
+        <li><a href="" data-toggle="modal" data-target=".project_060"> Developing interactive educational content in a stereoscopic 3D environment</a></li>               
+        <li><a href="" data-toggle="modal" data-target=".project_050"> Real-time monitoring of human-building interactions in a 3D Virtual Reality environment</a></li>               
       </ul>
     </div>
 
     <div class="card" style="margin: 3%; color: #4c4c4c;">
-      <div class="card-header"> Completed Research Projects</div>
-      <br>
-      <ul>
-        <li><a href="#project_040.html"> Training for Manufactured Construction</a></li>                  
-        <li><a href="#project_030.html"> Framework for Measuring Industrialized Construction Maturity</a></li>      
-        <li><a href="#project_020.html"> Sustainability Evaluation of Infrastructure Projects</a></li>                     
-        <li><a href="#project_010.html"> Key Elements of Net Zero Energy Buildings​</a></li>              
+      <div class="card-header fw-bold"> Completed Research Projects</div>
+      <ul style="margin-top:1%;">
+        <li><a href="" data-toggle="modal" data-target=".project_040"> Training for Manufactured Construction</a></li>                  
+        <li><a href="" data-toggle="modal" data-target=".project_030"> Framework for Measuring Industrialized Construction Maturity</a></li>      
+        <li><a href="" data-toggle="modal" data-target=".project_020"> Sustainability Evaluation of Infrastructure Projects</a></li>                     
+        <li><a href="" data-toggle="modal" data-target=".project_010"> Key Elements of Net Zero Energy Buildings​</a></li>              
       </ul>
     </div>
 
-    </div>
+  </div>
 
-  <div id="teaching" style="margin:3%; color: black">
-    <h5><br><br><br>Teaching ...</h5>
+  <div id="teaching" style="margin:3%; margin-top: 0%; color: black">
+    <br><br><br>
+    <h3 class="text-dark">Teaching ...</h3>
     <div class="card" style="margin: 3%; color: #4c4c4c; ">
-      <div class="card-header"> Courses at State University of New York</div>
-      <br>
-      <ul>
+      <div class="card-header fw-bold"> Courses at State University of New York</div>
+      <ul style="margin-top:1%;">
         <li> CME 255 - Plan Interpretation and Quantity Takeoff - Fall 2020, 2021</a></li>
         <li> CME 215 - Sustainable Construction - Spring 2020, 2021, 2022</a></li>
         <li> CME 343/543 - Construction Estimating - Spring 2020, 2021, 2022</a></li>
@@ -78,9 +98,8 @@
       </ul> 
     </div>
     <div class="card" style="margin: 3%; color: #4c4c4c; ">
-      <div class="card-header"> Courses at University of Florida </div>
-      <br>
-      <ul>
+      <div class="card-header fw-bold"> Courses at University of Florida </div>
+      <ul style="margin-top:1%;">
           <li> BCN4709 - Construction Project Management (TA) - Spring 2019, Fall 2018</a></li>
           <li> BCN6558 - Integrated Renewable Energy Systems (TA) - Fall 2018</a></li>
           <li> BCN6036 - Construction Research Methods (Instructor and TA) - Spring 2018, Fall 2018</a></li>
@@ -92,6 +111,57 @@
   
   <br><br><br><br>
   
+  <!-- Projects -->
+  <div class="modal project_070" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        Project 70 TBD
+      </div>
+    </div>
+  </div>
+  <div class="modal project_060" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        Project 60 TBD
+      </div>
+    </div>
+  </div>
+  <div class="modal project_050" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        Project 50 TBD
+      </div>
+    </div>
+  </div>
+  <div class="modal project_040" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        Project 40 TBD
+      </div>
+    </div>
+  </div>
+  <div class="modal project_030" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        Project 30 TBD
+      </div>
+    </div>
+  </div>
+  <div class="modal project_020" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        Project 20 TBD
+      </div>
+    </div>
+  </div>
+  <div class="modal project_010" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        Project 10 TBD
+      </div>
+    </div>
+  </div>
+
 </body>
 
 </html>
